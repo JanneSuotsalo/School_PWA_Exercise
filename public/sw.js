@@ -1,6 +1,6 @@
 "use strict";
 
-const cacheName = "Chargemap_pwa";
+const cacheName = "PWA-chargemap";
 
 const filesToCache = [
   "./",
