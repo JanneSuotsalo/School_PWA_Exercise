@@ -1,31 +1,11 @@
-"use strict";
-
 window.addEventListener("load", async () => {
-  const ul = document.querySelector("ul");
-  const rfrsh = document.querySelector("#refresh");
-  const form = document.querySelector("form");
-  const username = "Janne";
-  const greeting = form.elements.greeting;
-  console.log("hello");
+  "use strict";
 
-  const init = async () => {
-    const data = [];
+  if ("serviceWorker" in navigator) {
     try {
-      const greetings = await getGreetingsByUser(username);
-      for (const message of greetings) {
-        data.push(message);
-      }
+      await navigator.serviceWorker.register("./sw.js");
     } catch (e) {
       console.log(e.message);
     }
-
-    ul.innerHTML = "";
-    data.forEach((item) => {
-      ul.innerHTML += `<ul>${item.username}: ${item.greeting}</ul>`;
-    });
-  };
-
-  init();
-
-  rfrsh.addEventListener("click", init);
+  }
 });
