@@ -162,8 +162,8 @@
     if ("serviceWorker" in navigator) {
       try {
         await navigator.serviceWorker.register("./sw.js");
-      } catch (error) {
-        console.log(error.message);
+      } catch (e) {
+        console.log(e.message);
       }
     }
 
