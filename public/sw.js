@@ -1,5 +1,4 @@
 "use strict";
-self.importScripts("./js/example.js");
 const cacheName = "PWA-chargemap";
 
 const filesToCache = [
