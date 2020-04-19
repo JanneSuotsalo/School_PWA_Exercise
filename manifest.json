@@ -39,7 +39,7 @@
     }
   ],
   "lang": "en-US",
-  "start_url": "/~janneks/PWA_Part1",
+  "start_url": "/~janneks/PWA_Part1/",
   "display": "standalone",
   "background_color": "white",
   "theme_color": "white"
