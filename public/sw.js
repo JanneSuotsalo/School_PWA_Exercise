@@ -1,5 +1,5 @@
 "use strict";
-
+self.importScripts("./js/example.js");
 const cacheName = "PWA-chargemap";
 
 const filesToCache = [
@@ -10,17 +10,12 @@ const filesToCache = [
   "./img/icon.png",
   "./img/logo.svg",
   "./img/splash.png",
+  "./modules/@fortawesome/fontawesome-free/css/all.min.css",
+  "./modules/leaflet/dist/leaflet.css",
+  "./modules/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.css",
   "./modules/leaflet/dist/leaflet.js",
   "./modules/esri-leaflet/dist/esri-leaflet.js",
   "./modules/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.js",
-  "./modules/esri-leaflet-geocoder/dist/esri-leaflet-geocoder.css",
-  "./modules/leaflet/dist/leaflet.css",
-  "./modules/@fortawesome/fontawesome-free/css/all.min.css",
-  "./modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2",
-  "./modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff",
-  "./modules/leaflet/dist/images/marker-icon.png",
-  "./modules/leaflet/dist/images/marker-shadow.png",
-  "./modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf",
 ];
 
 /* Start the service worker and cache all of the app's content */
